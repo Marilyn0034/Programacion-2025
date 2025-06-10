@@ -5,7 +5,7 @@ estudiantes = []
 asignaturas = []
 end = 0
 promedio = 0.0
-
+archivo = open("Notas Curso.txt", "w")
 #Se pide al usuario que ingrese sus parámetros + bienvenida.
 print("Bienvenido al Sistema de Cálculo de Promedios.")
 cantEstudiantes = int(input("Ingrese la cantidad de estudiantes del curso: "))
@@ -49,6 +49,8 @@ for i in range(cantEstudiantes):
     promedioFinal = f.calcularPromedio(sumaNotasFinal, notasDisponibles)
     print(f"Los promedios en las asignaturas del estudiante {estudiantes[i]} son: {promedioAsignatura}")
     print(f"Y su promedio general (redondeado) es: {promedioFinal}")
+    f.escribirArchivo(estudiantes[i], promedioFinal, archivo)
     notasDisponibles = cantAsignaturas
 
 print("Gracias por usar el Sistema de Cálculo de Promedios!")
+archivo.close()
