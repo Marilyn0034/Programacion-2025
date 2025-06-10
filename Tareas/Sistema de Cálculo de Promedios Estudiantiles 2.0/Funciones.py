@@ -3,4 +3,4 @@ def calcularPromedio(notas, cantNotas):
     return(promedio)
 
 def escribirArchivo(estudiante, promedio, archivo):
-    archivo.write(f"{estudiante}, {promedio}\n")
+    archivo.write(f"{estudiante},{promedio}\n")
