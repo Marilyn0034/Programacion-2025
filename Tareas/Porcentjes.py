@@ -21,3 +21,4 @@ for e in valores:
 
 #Salida de datos
 print(f"Los porcentajes son: {str(porcentajes).rstrip(", '0.0%']")+"%']"}")
+print(f"La suma (Total de datos) es: {sumaDatos}")
