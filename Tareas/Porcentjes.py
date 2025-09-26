@@ -20,4 +20,4 @@ for e in valores:
     porcentajes.append(str(porcentaje) + "%")
 
 #Salida de datos
-print(f"Los porcentajes son: {str(porcentajes)}")
+print(f"Los porcentajes son: {str(porcentajes).rstrip(", '0.0%']")+"%']"}")
